@@ -1,11 +1,15 @@
 # EMBank Devops Tech Challenge PART 1
 
 ## Requirement
-This is a challenge where you can showcase your technical skills and the considerations
-which you make when performing devops and infrastructure tasks. Your solution may be as
-simple or complex as you like, provided it meets the requirements below, and will serve as a
-discussion point when you come in to meet us. You should not need to spend more than
-two or three hours on the challenge.
+You have been asked to create a web site. As a proof of concept, it will be sufficient that you
+demonstrate a website that displays text (e.g. *Lorem Ipsum*
+https://en.wikipedia.org/wiki/Lorem_ipsum) and an image on a single home page.
+You can create your own application but can also use an open source or community
+software, such as Wordpress (https://wordpress.org); or Keystone (http://keystonejs.com);
+(or even use static content).
+
+This proof of concept is to demonstrate the technical feasibility of hosting, managing and
+scaling the platform and is not about content.
 
 ## Architecture
 This repository contains Spring Boot application, together with the Terraform scripts to serve it on Google Cloud Run.
@@ -39,3 +43,4 @@ See [Terraform docs](https://registry.terraform.io/providers/hashicorp/google/la
 * Use Terraform to setup Cloud Build for the repository. This will allow for CI/CD process.
 * Setup testing and include it in Cloud Build process.
 * Connect real domain property to Cloud Run service and setup TLS secured (HTTPS) connection.
+* Optimize Docker container, so it is leaner and cold starts (scaling to 0 and up) are possible
