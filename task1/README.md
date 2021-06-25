@@ -42,5 +42,6 @@ See [Terraform docs](https://registry.terraform.io/providers/hashicorp/google/la
 ## TODOs and improvements
 * Use Terraform to setup Cloud Build for the repository. This will allow for CI/CD process.
 * Setup testing and include it in Cloud Build process.
-* Connect real domain property to Cloud Run service and setup TLS secured (HTTPS) connection.
+* Connect real domain property to Cloud Run service
+* Setup HTTP(S) load balancing, to enable Cloud CDN or serve traffic from multiple regions
 * Optimize Docker container, so it is leaner and cold starts (scaling to 0 and up) are possible
